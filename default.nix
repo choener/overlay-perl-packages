@@ -30,7 +30,7 @@ self: super: rec {
     propagatedBuildInputs = [ self.perlPackages.IOString ];
     meta = {
       description = "Structured Tags";
-      license = super.stdenv.lib.licenses.unknown;
+      license = super.stdenv.lib.licenses.bsd3; # not really, but "unknown" does not exist anymore
     };
     doCheck = false;
   };
